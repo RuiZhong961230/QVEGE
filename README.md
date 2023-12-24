@@ -11,6 +11,6 @@ volume = {87},
 pages = {148-163},  
 year = {2024},  
 issn = {1110-0168},  
-doi = {https://doi.org/10.1016/j.aej.2023.12.028},  
+doi = {https://doi.org/10.1016/j.aej.2023.12.028 },  
 author = {Rui Zhong and Fei Peng and Jun Yu and Masaharu Munetomo},  
 }
