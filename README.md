@@ -4,7 +4,7 @@ Q-Learning based Vegetation Evolution for Numerical Optimization and Wireless Se
 Necessary packages: opfunu, enoppy, and pyDOE2
 
 
-@article{ZHONG2024148,  
+@article{Zhong:24,  
 title = {Q-learning based vegetation evolution for numerical optimization and wireless sensor network coverage optimization},  
 journal = {Alexandria Engineering Journal},  
 volume = {87},  
