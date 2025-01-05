@@ -1,5 +1,5 @@
 # QVEGE
-Q-Learning based Vegetation Evolution for Numerical Optimization and Wireless Sensor Network Coverage Optimization
+Q-learning based vegetation evolution for numerical optimization and wireless sensor network coverage optimization
 
 ## Highlights
 • We propose a novel Q-learning based Vegetation Evolution (QVEGE) for numerical optimization.  
