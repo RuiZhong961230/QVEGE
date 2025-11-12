@@ -10,7 +10,7 @@ from copy import deepcopy
 import numpy as np
 from opfunu.cec_based import cec2020
 from scipy.stats import levy
-# from pyDOE2 import lhs
+from pyDOE2 import lhs
 
 PopSize = 10
 DimSize = 10
@@ -55,21 +55,12 @@ def CheckIndi(Indi):
 
 
 # initialize the Pop randomly
-# def Initialization(func):
-#     global Pop, PopFit, curFEs, curSpan
-#     Pop = lhs(DimSize, samples=PopSize)
-#     for i in range(PopSize):
-#         for j in range(DimSize):
-#             Pop[i][j] = LB[j] + (UB[j] - LB[j]) * Pop[i][j]
-#         PopFit[i] = func.evaluate(Pop[i])
-#         curFEs += 1
-#     curSpan = 1
 def Initialization(func):
     global Pop, PopFit, curFEs, curSpan
-    Pop = np.zeros((PopSize, DimSize))
+    Pop = lhs(DimSize, samples=PopSize)
     for i in range(PopSize):
         for j in range(DimSize):
-            Pop[i][j] = LB[j] + (UB[j] - LB[j]) * np.random.rand()
+            Pop[i][j] = LB[j] + (UB[j] - LB[j]) * Pop[i][j]
         PopFit[i] = func.evaluate(Pop[i])
         curFEs += 1
     curSpan = 1
